@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form id="smoothieForm">
+      <h2>Order Your Smoothie</h2>
+
+      <!-- Input for customer's name -->
+      <label for="customerName">Name:</label>
+      <input type="text" id="customerName" name="customerName" required />
+
+      <!-- Dropdown to select smoothie size -->
+      <label for="size">Choose Size:</label>
+      <select id="size" name="size" required>
+        <!-- Placeholder option -->
+        <option value="" disabled selected>Select a size</option>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+      </select>
+
+      <!-- Section to choose ingredients -->
+      <fieldset>
+        <legend>Choose Ingredients:</legend>
+        <input type="checkbox" id="banana" name="ingredients" value="Banana" />
+        <label for="banana">Banana</label>
+
+        <input
+          type="checkbox"
+          id="strawberry"
+          name="ingredients"
+          value="Strawberry"
+        />
+        <label for="strawberry">Strawberry</label>
+
+        <input type="checkbox" id="mango" name="ingredients" value="Mango" />
+        <label for="mango">Mango</label>
+
+        <input
+          type="checkbox"
+          id="spinach"
+          name="ingredients"
+          value="Spinach"
+        />
+        <label for="spinach">Spinach</label>
+
+        <input
+          type="checkbox"
+          id="protein"
+          name="ingredients"
+          value="Protein Powder"
+        />
+        <label for="protein">Protein Powder</label>
+      </fieldset>
+
+      <!-- Section to select the smoothie base -->
+      <fieldset>
+        <legend>Choose a Base:</legend>
+        <input type="radio" id="water" name="base" value="Water" required />
+        <label for="water">Water</label>
+
+        <input type="radio" id="milk" name="base" value="Milk" />
+        <label for="milk">Milk</label>
+
+        <input type="radio" id="almondMilk" name="base" value="Almond Milk" />
+        <label for="almondMilk">Almond Milk</label>
+
+        <input type="radio" id="yogurt" name="base" value="Yogurt" />
+        <label for="yogurt">Yogurt</label>
+      </fieldset>
+
+      <!-- Input for quantity of smoothies -->
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" required />
+
+      <!-- Textarea for special instructions -->
+      <label for="instructions">Special Instructions:</label>
+      <textarea id="instructions" name="instructions"></textarea>
+
+      <!-- Button to place the order -->
+      <button type="button" id="orderButton">Order</button>
+    </form>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

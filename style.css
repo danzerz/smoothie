@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+
+  color: #2e294e;
+  background: url("./space-for-text-on-textured-background-surrounded-by-delicious-smoothies-from-top-view-background-image-ai-generated-photo.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: -1;
+  margin-top: 10em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+
+  max-width: 400px;
+  padding: 20px;
+  border: 5px solid #e63946;
+  border-radius: 15px;
+
+  color: #f1faee;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  color: #f1faee;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+fieldset {
+  border: 2px dashed #fcbf49;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+label,
+legend {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffbe0b;
+}
+
+input,
+select,
+textarea,
+button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border: 2px solid #ffbe0b;
+  border-radius: 5px;
+  background-color: #2e294e;
+  color: #f1faee;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 5px #ffbe0b;
+  transform: scale(1.02);
+}
+
+button {
+  background-color: #06d6a0;
+  color: #1d3557;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #118ab2;
+  transform: translateY(-3px);
+}
+
+h3 {
+  color: #06d6a0;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #2e294e;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 95%;
+    padding: 15px;
+  }
+}
