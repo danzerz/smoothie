@@ -1,15 +1,14 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
 }
 body {
   font-family: "Courier New", Courier, monospace;
-
-  color: #2e294e;
   background: url("./space-for-text-on-textured-background-surrounded-by-delicious-smoothies-from-top-view-background-image-ai-generated-photo.jpg")
-    no-repeat center center fixed;
+    no-repeat center center fixed; /* Background image */
   background-size: cover;
+  color: #dedede;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +24,6 @@ body::before {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(8px);
   z-index: -1;
-  margin-top: 10em;
 }
 
 form {
@@ -35,26 +33,17 @@ form {
   align-items: center;
   gap: 20px;
   width: 90%;
-
   max-width: 400px;
   padding: 20px;
   border: 5px solid #e63946;
   border-radius: 15px;
-
+  background-color: #1d3557;
   color: #f1faee;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-  color: #f1faee;
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 fieldset {
-  border: 2px dashed #fcbf49;
+  border: 2px dashed #fcbf49; /* Retro-styled dashed borders */
   padding: 10px;
   width: 100%;
   border-radius: 10px;
@@ -77,12 +66,12 @@ button {
   padding: 10px;
   border: 2px solid #ffbe0b;
   border-radius: 5px;
-  background-color: #2e294e;
+  background-color: #2c274b;
   color: #f1faee;
   font-size: 1rem;
   font-family: inherit;
   outline: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 input:focus,
@@ -114,7 +103,6 @@ h3 {
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 20px;
-  text-shadow: 2px 2px #2e294e;
 }
 
 @media screen and (max-width: 600px) {
